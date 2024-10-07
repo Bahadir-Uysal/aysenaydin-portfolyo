@@ -4,11 +4,13 @@ import Title from "./Title";
 function ProfileSection() {
   return (
    
-        <div className=" bg-purple h-[552px] pt-16 pl-[240px] w-full justify-center items-center ">
-          <Title text={"Profile"} textSize={"text-5xl"} color={"text-green"} />
-       
+
+    <div className="flex justify-center  bg-purple w-full">
+        <div className=" h-[552px] pt-16 flex flex-col">
+            
+        <Title  text={"Profile"} textSize={"text-5xl"} color={"text-green"} />
       
-        <div className="flex gap-5 w-[960px] justify-center items-center">
+        <div className="flex gap-5 pt-6 ">
           <div className="flex flex-col gap-5 w-[300px]">
             <h2 className="text-3xl font-medium text-white mb-4">
               Basic Information
@@ -21,7 +23,7 @@ function ProfileSection() {
               <strong>İkamet Şehri</strong>{" "}
               <span className="text-white ml-2">Istanbul</span>
             </div>
-            <div className="text-green mb-2">
+            <div className="text-green mb-2 ">
               <strong>Eğitim Durumu</strong>{" "}
               <span className="text-white ml-2">
                 Ege Üniv. Matematik, Lisans, 2016
@@ -37,7 +39,7 @@ function ProfileSection() {
             <img src="" alt="Profile" className="" />
           </div>
 
-          <div className="flex-1">
+          <div className="w-[300px]">
             <h2 className="text-3xl font-semibold text-white mb-4">About Me</h2>
             <p className="text-white">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
@@ -46,6 +48,7 @@ function ProfileSection() {
               deserunt quam temporibus cumque magnam!
             </p>
           </div>
+        </div>
         </div>
       </div>
    

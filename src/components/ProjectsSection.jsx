@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import ProjectCardList from "./ProjectCardList";
 
 function ProjectsSection() {
   return (
-    <div>ProjectsSection</div>
-  )
+    <div className="flex justify-center bg-green py-[84px]">
+      <ProjectCardList />
+    </div>
+  );
 }
 
-export default ProjectsSection
+export default ProjectsSection;

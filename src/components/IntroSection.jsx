@@ -3,12 +3,18 @@ import SocialButton from "./SocialButton";
 
 function IntroSection() {
   return (
-    <div className="h-[671px] bg-purple flex items-center justify-center">
+    <div className="h-[671px] bg-light-purple-to-green  flex items-center justify-center">
       <div className="w-[955px]">
         <div className="flex justify-between h-20">
           <h2 className="text-green font-bold text-3xl self-center">Ayşen</h2>
-          <div className="flex gap-28 ">
+          <div className="flex gap-10 ">
             <div className="uppercase text-green font-bold">Türkçe'ye geç</div>
+            <img
+              
+                src={"light-switch.png"}
+                alt="theme mode"
+                className="h-6 cursor-pointer"
+              />
             <div className="uppercase text-white font-bold">Dark mode</div>
           </div>
         </div>
