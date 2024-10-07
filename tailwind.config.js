@@ -13,6 +13,9 @@ export default {
       fontSize: {
         "5.5xl": "3.375rem",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
 
   },
