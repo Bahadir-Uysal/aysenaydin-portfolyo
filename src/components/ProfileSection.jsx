@@ -3,8 +3,8 @@ import Title from "./Title";
 
 function ProfileSection() {
   return (
-    <div>
-        <div className=" bg-purple h-[552px] pt-16 pl-[240px]  ">
+   
+        <div className=" bg-purple h-[552px] pt-16 pl-[240px] w-full justify-center items-center ">
           <Title text={"Profile"} textSize={"text-5xl"} color={"text-green"} />
        
       
@@ -48,7 +48,7 @@ function ProfileSection() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
 

@@ -7,7 +7,7 @@ import FooterSection from "./components/FooterSection";
 function App() {
   return (
     <>
-      <div className="App bg-light-white dark:bg-dark-gray">
+      <div>
         <IntroSection />
         <SkillsSection />
         <ProfileSection />

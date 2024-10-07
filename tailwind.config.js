@@ -3,12 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors:{
-        "green":" #CBF281",
-        "purple":"#4731D3",
-        'gray':' #777777',
-        'redux':'#764abc',
-        'vs':"#038fd6"
+      colors: {
+        green: " #CBF281",
+        purple: "#4731D3",
+        gray: " #777777",
+        redux: "#764abc",
       },
       fontSize: {
         "5.5xl": "3.375rem",
@@ -17,7 +16,6 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
     },
-
   },
   plugins: [],
 };
