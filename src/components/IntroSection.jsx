@@ -1,4 +1,5 @@
 import Title from "./Title";
+import SocialButton from "./SocialButton";
 
 function IntroSection() {
   return (
@@ -21,6 +22,22 @@ function IntroSection() {
             <div className="text-white text-2xl">
               ...who likes to craft solid and scalable frontend products with
               great user experiences.
+            </div>
+            <div className="flex gap-3">
+              <SocialButton
+                icon={
+                  <i className="fa fa-github text-2xl" aria-hidden="true"></i>
+                }
+                text={"Github"}
+                link={"https://github.com/aysenayydin"}
+              />
+              <SocialButton
+                icon={
+                  <i className="fa fa-linkedin text-2xl" aria-hidden="true"></i>
+                }
+                text={"Linkedin"}
+                link={"https://www.linkedin.com/in/aysenaydin/"}
+              />
             </div>
           </div>
           <div className="w-[350px] bg-white h-[375px] shrink-0 rounded-xl">
