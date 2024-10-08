@@ -1,37 +1,38 @@
 import React from "react";
 import Title from "./Title";
+import { useLanguageTheme } from "../contexts/LanguageThemeContext";
 
 function ProfileSection() {
+  const { texts } = useLanguageTheme();
   return (
-   
 
     <div className="flex justify-center  bg-light-purple w-full dark:bg-dark-purple">
         <div className=" h-[552px] pt-16 flex flex-col">
             
-        <Title  text={"Profile"} textSize={"text-5xl"} color={"text-light-green"} />
+        <Title  text={texts.profileSection.heading} textSize={"text-5xl"} color={"text-light-green"} />
       
         <div className="flex gap-5 pt-6 ">
           <div className="flex flex-col gap-5 w-[300px]">
             <h2 className="text-3xl font-medium text-white mb-4">
-              Basic Information
+            {texts.profileSection.basicInfoTitle}
             </h2>
             <div className="text-light-green mb-2">
-              <strong>Doğum Tarihi</strong>{" "}
-              <span className="text-white ml-2">12.06.1993</span>
+              <strong>{texts.profileSection.birthDate}</strong>{" "}
+              <span className="text-white ml-2">{texts.profileSection.birthDateValue}</span>
             </div>
             <div className="text-light-green mb-2">
-              <strong>İkamet Şehri</strong>{" "}
-              <span className="text-white ml-2">Istanbul</span>
+              <strong>{texts.profileSection.city}</strong>{" "}
+              <span className="text-white ml-2">{texts.profileSection.cityValue}</span>
             </div>
             <div className="text-light-green mb-2 ">
-              <strong>Eğitim Durumu</strong>{" "}
+              <strong>{texts.profileSection.education}</strong>{" "}
               <span className="text-white ml-2">
-                Ege Üniv. Matematik, Lisans, 2016
+              {texts.profileSection.educationValue}
               </span>
             </div>
             <div className="text-light-green mb-2">
-              <strong>Tercih Ettiği Rol</strong>{" "}
-              <span className="text-white ml-2">Frontend, UI</span>
+              <strong>{texts.profileSection.preferredRole}</strong>{" "}
+              <span className="text-white ml-2">{texts.profileSection.preferredRoleValue}</span>
             </div>
           </div>
 
@@ -40,16 +41,13 @@ function ProfileSection() {
           </div>
 
           <div className="w-[300px]">
-            <h2 className="text-3xl font-semibold text-white mb-4">About Me</h2>
+            <h2 className="text-3xl font-semibold text-white mb-4">{texts.profileSection.aboutMeTitle}</h2>
             <p className="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-              aut, odit laborum aliquam voluptatum nisi mollitia.
+            {texts.profileSection.aboutMeText1}
             </p>
             <br/>
             <p className="text-white">
-            Minima
-              accusamus ratione soluta aperiam sit voluptate? Dicta quod
-              deserunt quam temporibus cumque magnam!
+            {texts.profileSection.aboutMeText2}
             </p>
           </div>
         </div>

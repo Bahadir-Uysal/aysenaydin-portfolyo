@@ -1,12 +1,18 @@
 
+import { useLanguageTheme } from "../contexts/LanguageThemeContext";
 
 
 const FooterSection = () => {
+  const { texts } = useLanguageTheme();
+
   return (
     <footer className="h-[454px] flex flex-col justify-center items-center gap-4">
-      <h2 className="text-light-purple dark:text-dark-dblila   text-3xl mb-4 font-bold">Send me a message!</h2>
+      <h2 className="text-light-purple dark:text-dark-dblila   text-3xl mb-4 font-bold"> {texts.footerSection.heading}</h2>
       <p className="text-2xl leading-9 text-center dark:text-white">
-        Got a question or proposal, or just want <br/> to say hello? Go ahead.
+        {texts.footerSection.line1}
+      </p>
+      <p className="text-2xl leading-9 text-center dark:text-white">
+        {texts.footerSection.line2}
       </p>
       <a href="mailto:aysen904@gmail.com" className="text-light-purple dark:text-dark-dblila text-xl font-medium hover:underline">
         aysen904@gmail.com

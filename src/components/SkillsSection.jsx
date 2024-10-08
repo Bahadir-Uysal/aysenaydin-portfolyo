@@ -1,12 +1,15 @@
 import React from "react";
 import Title from "./Title";
-import { skillsLeft } from "../data";
-import { skillsRight } from "../data";
+import { skillsLeft } from "../content/data";
+import { skillsRight } from "../content/data";
+import { useLanguageTheme } from "../contexts/LanguageThemeContext";
 
 function SkillList() {
+  const { texts } = useLanguageTheme();
+
   return (
     <div className="flex gap-36 mt-[84px] mb-[96px] justify-center w-full">
-      <Title text={"Skills"} textSize={"text-5xl"} color={"text-light-purple dark:text-light-green"} />
+      <Title text={texts.skillsSection.heading} textSize={"text-5xl"} color={"text-light-purple dark:text-light-green"} />
 
       <div className="flex justify-center gap-36 ">
         <div className="flex gap-9 flex-col">

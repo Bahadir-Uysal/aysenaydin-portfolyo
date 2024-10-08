@@ -3,7 +3,8 @@ import Title from "./Title";
 import { useLanguageTheme } from "../contexts/LanguageThemeContext";
 
 function IntroSection() {
-  const { theme, toggleTheme } = useLanguageTheme();
+  const { theme, toggleTheme, texts, language, changeLang } =
+    useLanguageTheme();
 
   return (
     <div className="h-[671px] bg-light-purple-to-green dark:bg-dark-purple-to-dark-green flex items-center justify-center">
@@ -14,8 +15,27 @@ function IntroSection() {
           </h2>
           <div className="flex gap-9">
             <div className="uppercase text-light-green dark:text-light-gray font-bold">
-              <span className="dark:text-dark-lilly">Türkçe</span>
-              <span className="text-light-silver">&apos;ye geç</span>
+              {language === "tr" ? (
+                <>
+                  <span className="text-light-silver">Switch to </span>
+                  <span
+                    className="dark:text-dark-lilly cursor-pointer"
+                    onClick={() => changeLang("en")}
+                  >
+                    {texts.introSection.currentLang}
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span
+                    className="dark:text-dark-lilly cursor-pointer"
+                    onClick={() => changeLang("tr")}
+                  >
+                    {texts.introSection.currentLang}
+                  </span>
+                  <span className="text-light-silver">'ye geç</span>
+                </>
+              )}
             </div>
             <div className="flex gap-2">
               <img
@@ -25,7 +45,7 @@ function IntroSection() {
                 className="h-6 cursor-pointer"
               />
               <div className="uppercase text-light-purple dark:text-dark-silver font-bold">
-                {theme === "dark" ? "Dark mode" : "Light mode"}
+                {theme === "dark" ? texts.introSection.darkMode: texts.introSection.lightMode}
               </div>
             </div>
           </div>
@@ -34,11 +54,11 @@ function IntroSection() {
           <div className="flex flex-col gap-9">
             <Title
               textSize={"text-5.5xl"}
-              text={"I am a Frontend Developer..."}
+              text={texts.introSection.heading}
               color={"text-light-green"}
             />
             <div className="text-white text-2xl">
-            I'm open to new experiences, love learning, and have a disciplined approach to my work. I develop projects with a passion for web technologies and a goal of creating user-friendly experiences.
+            {texts.introSection.subHeading}
             </div>
             <div className="flex gap-3">
               <SocialButton
@@ -58,7 +78,11 @@ function IntroSection() {
             </div>
           </div>
           <div className=" shrink-0 ">
-            <img className="w-[350px] h-[375px] rounded-xl" src="profile1.png" alt="" />
+            <img
+              className="w-[350px] h-[375px] rounded-xl"
+              src="profile1.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
