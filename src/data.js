@@ -11,7 +11,7 @@ export const skillsLeft = [
     {
       title: "REDUX",
       icon: "/redux.png",
-      backgroundColor: "bg-redux"
+      backgroundColor: "bg-light-redux"
     },
   ];
   
