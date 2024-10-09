@@ -7,7 +7,7 @@ function IntroSection() {
     useLanguageTheme();
 
   return (
-    <div className=" h-[671px] lg:bg-light-purple-to-green dark:bg-dark-purple-to-dark-green sm:bg-light-gray  flex items-center justify-center sm:px-10 ">
+    <div className=" h-[671px] sm:bg-light-purple-to-green  lg:bg-light-purple-to-green dark:bg-dark-purple-to-dark-green   flex items-center justify-center sm:px-10 ">
       <div className=" lg:max-w-[955px] ">
         <div className="flex justify-between h-20">
           <h2 className="text-light-green font-bold text-3xl self-center">
@@ -52,7 +52,7 @@ function IntroSection() {
             </div>
           </div>
         </div>
-        <div className="flex sm:gap-5 lg:gap-20 ">
+        <div className="flex sm:flex-row flex-col sm:gap-5 lg:gap-20 ">
           <div className="flex flex-col gap-9">
             <Title
               textSize={"text-5.5xl"}
