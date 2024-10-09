@@ -6,8 +6,8 @@ function ProfileSection() {
   const { texts } = useLanguageTheme();
   return (
 
-    <div className="flex justify-center  bg-light-purple w-full dark:bg-dark-purple">
-        <div className=" h-[552px] pt-16 flex flex-col">
+    <div className="flex justify-center  bg-light-purple w-full dark:bg-dark-purple sm:px-10">
+        <div className=" lg:h-[552px] pt-16 flex flex-col">
             
         <Title  text={texts.profileSection.heading} textSize={"text-5xl"} color={"text-light-green"} />
       

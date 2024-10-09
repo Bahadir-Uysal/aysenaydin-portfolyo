@@ -42,6 +42,10 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
     },
+    screens: {
+      sm: "576px",
+      lg: "1440px",
+    },
   },
   plugins: [],
 };

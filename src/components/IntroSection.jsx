@@ -7,8 +7,8 @@ function IntroSection() {
     useLanguageTheme();
 
   return (
-    <div className="h-[671px] bg-light-purple-to-green dark:bg-dark-purple-to-dark-green flex items-center justify-center">
-      <div className="w-[955px]">
+    <div className=" h-[671px] lg:bg-light-purple-to-green dark:bg-dark-purple-to-dark-green sm:bg-light-gray  flex items-center justify-center sm:px-10 ">
+      <div className=" lg:max-w-[955px] ">
         <div className="flex justify-between h-20">
           <h2 className="text-light-green font-bold text-3xl self-center">
             Ayşen
@@ -44,7 +44,7 @@ function IntroSection() {
                 alt="theme mode"
                 className="h-6 cursor-pointer"
               />
-              <div className="uppercase text-light-purple dark:text-dark-silver font-bold">
+              <div className="uppercase  text-light-purple dark:text-dark-silver font-bold">
                 {theme === "dark" ? texts.introSection.darkMode: texts.introSection.lightMode}
               </div>
             </div>
@@ -79,7 +79,7 @@ function IntroSection() {
           </div>
           <div className=" shrink-0 ">
             <img
-              className="w-[350px] h-[375px] rounded-xl"
+              className="lg:w-[350px] lg:h-[375px]  sm:w-[200px] sm:h-[200px] rounded-xl"
               src="profile1.png"
               alt=""
             />

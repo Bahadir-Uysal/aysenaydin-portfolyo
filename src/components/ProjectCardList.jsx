@@ -8,7 +8,7 @@ function ProjectCardList() {
   const cards = texts.projectsSection.projects;
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 sm:p-10">
       <Title color="text-light-purple dark:text-light-green" text={texts.projectsSection.heading} textSize="text-5xl" />
       {cards.map((card) => (
         <ProjectCard

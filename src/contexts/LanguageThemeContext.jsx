@@ -6,7 +6,7 @@ import {
   getFromLocalStorage,
 } from "../hooks/localstoragehelper.js";
 import { useEffect } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const LanguageThemeContext = createContext();

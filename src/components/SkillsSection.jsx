@@ -8,7 +8,7 @@ function SkillList() {
   const { texts } = useLanguageTheme();
 
   return (
-    <div className="flex gap-36 mt-[84px] mb-[96px] justify-center w-full">
+    <div className="flex sm:gap-8 lg:gap-36 mt-[84px] mb-[96px] justify-center w-full sm:px-10">
       <Title text={texts.skillsSection.heading} textSize={"text-5xl"} color={"text-light-purple dark:text-light-green"} />
 
       <div className="flex justify-center gap-36 ">
@@ -19,7 +19,7 @@ function SkillList() {
               className="flex items-center gap-6 text-2xl text-light-gray font-semibold"
             >
               <img
-                className={`w-32 h-32 rounded-md ${
+                className={`sm:w-16 sm:h-16 lg:w-32 lg:h-32 rounded-md ${
                   skill.backgroundColor ? skill.backgroundColor : ""
                 }`}
                 src={skill.icon}
@@ -37,7 +37,7 @@ function SkillList() {
               className="flex items-center gap-6 text-2xl text-light-gray font-semibold"
             >
               <img
-                className="w-32 h-32 rounded-md "
+                className=" sm:w-16 sm:h-16 lg:w-32 lg:h-32 rounded-md "
                 src={skill.icon}
                 alt={skill.title}
               />
