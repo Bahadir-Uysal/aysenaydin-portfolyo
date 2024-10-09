@@ -1,4 +1,3 @@
-# React + Vite
 Personal Portfolio
 
 This is my personal portfolio project, built using React, Context API, LocalStorage, Axios and Tailwind CSS. It showcases my skills, projects, and provides a glimpse into my professional background.
@@ -18,7 +17,7 @@ Axios: Used Axios to handle form submissions and communicate with a mock backend
 
 ![alt text](image.png)
 
-#Project Structure
+Project Structure
 
 src/components: Contains reusable React components such as Badge, FooterSection, IntroSection, ProfileSection, ProjectCard, SkillSection, etc.
 

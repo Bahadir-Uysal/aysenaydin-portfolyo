@@ -45,7 +45,9 @@ function IntroSection() {
                 className="h-6 cursor-pointer"
               />
               <div className="uppercase  text-light-purple dark:text-dark-silver font-bold">
-                {theme === "dark" ? texts.introSection.darkMode: texts.introSection.lightMode}
+                {theme === "dark"
+                  ? texts.introSection.darkMode
+                  : texts.introSection.lightMode}
               </div>
             </div>
           </div>
@@ -58,7 +60,7 @@ function IntroSection() {
               color={"text-light-green"}
             />
             <div className="text-white text-2xl">
-            {texts.introSection.subHeading}
+              {texts.introSection.subHeading}
             </div>
             <div className="flex gap-3">
               <SocialButton
