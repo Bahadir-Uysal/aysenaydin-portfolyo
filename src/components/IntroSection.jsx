@@ -46,13 +46,13 @@ function IntroSection() {
               />
               <div className="uppercase  text-light-purple dark:text-dark-silver font-bold">
                 {theme === "dark"
-                  ? texts.introSection.darkMode
-                  : texts.introSection.lightMode}
+                  ? texts.introSection.lightMode
+                  : texts.introSection.darkMode}
               </div>
             </div>
           </div>
         </div>
-        <div className="flex gap-20 ">
+        <div className="flex sm:gap-5 lg:gap-20 ">
           <div className="flex flex-col gap-9">
             <Title
               textSize={"text-5.5xl"}
