@@ -44,7 +44,7 @@ function IntroSection() {
                 alt="theme mode"
                 className="h-6 cursor-pointer"
               />
-              <div className="uppercase  text-light-purple dark:text-dark-silver font-bold">
+              <div className="uppercase  text-dark-pblila dark:text-dark-silver font-bold">
                 {theme === "dark"
                   ? texts.introSection.lightMode
                   : texts.introSection.darkMode}
