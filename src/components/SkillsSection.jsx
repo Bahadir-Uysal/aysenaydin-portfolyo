@@ -8,7 +8,7 @@ function SkillList() {
   const { texts } = useLanguageTheme();
 
   return (
-    <div className="flex sm:gap-8 lg:gap-36 mt-[84px] mb-[96px] justify-center w-full sm:px-10">
+    <div className="flex sm:gap-8 lg:gap-36 mt-[84px] mb-[96px] justify-center w-full">
       <Title text={texts.skillsSection.heading} textSize={"text-5xl"} color={"text-light-purple dark:text-light-green"} />
 
       <div className="flex justify-center gap-36 ">

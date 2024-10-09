@@ -4,7 +4,7 @@ import Badge from "./Badge";
 export default function ProjectCard({ img, name, desc, skills, link, github }) {
   return (
     <div className="sm:w-[100%] lg:w-[955px] bg-white dark:bg-dark-dbgri rounded-xl flex gap-4 items-center shadow-card-shadow">
-      <img src={img} alt="" className="h-[360px] w-[360px] rounded-l-xl" />
+      <img src={img} alt="" className="lg:h-[360px] lg:w-[360px] sm:w-[200px] rounded-l-xl" />
       <div className="flex flex-col gap-6 p-8">
         <h2 className="font-bold text-3xl text-light-purple dark:text-dark-pclil">{name}</h2>
         <div className="dark:text-white">{desc}</div>
