@@ -7,7 +7,7 @@ const FooterSection = () => {
 
   return (
     <footer className="h-[454px] flex flex-col justify-center items-center gap-4">
-      <h2 className="text-light-purple dark:text-dark-dblila   text-3xl mb-4 font-bold"> {texts.footerSection.heading}</h2>
+      <h2 className="text-light-purple dark:text-dark-dblila   text-5xl mb-4 font-bold"> {texts.footerSection.heading}</h2>
       <p className="text-2xl leading-9 text-center dark:text-white">
         {texts.footerSection.line1}
       </p>
@@ -18,16 +18,16 @@ const FooterSection = () => {
         aysen904@gmail.com
       </a>
       <div className=" flex gap-6 text-3xl">
-        <a href="#" className=" text-light-purple dark:text-dark-dblila ">
+        <a href="https://twitter.com/" className=" text-light-purple dark:text-dark-dblila ">
           <i className="fa fa-twitter"></i>
         </a>
-        <a href="#" className=" text-light-purple dark:text-dark-dblila ">
+        <a href="https://codepen.io/" className=" text-light-purple dark:text-dark-dblila ">
           <i className="fa fa-codepen"></i>
         </a>
-        <a href="#" className=" text-light-purple dark:text-dark-dblila">
+        <a href="mailto:aysen904@gmail.com" className=" text-light-purple dark:text-dark-dblila">
           <i className="fa fa-at"></i>
         </a>
-        <a href="#" className=" text-light-purple dark:text-dark-dblila">
+        <a href="https://instagram.com/" className=" text-light-purple dark:text-dark-dblila">
           <i className="fa fa-instagram"></i>
         </a>
       </div>
