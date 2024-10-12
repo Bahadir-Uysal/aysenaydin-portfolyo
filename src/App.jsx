@@ -19,10 +19,10 @@ function App() {
     <>
       <div className="App bg-light-white dark:bg-dark-gray">
         <IntroSection />
-        <SkillsSection />
+         <SkillsSection /> 
         <ProfileSection />
-        <ProjectsSection />
-        <FooterSection />
+         <ProjectsSection />
+        <FooterSection />  
       </div>
     </>
   );

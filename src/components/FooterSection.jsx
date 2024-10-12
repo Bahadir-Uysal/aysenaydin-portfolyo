@@ -7,7 +7,7 @@ const FooterSection = () => {
 
   return (
     <footer className="h-[454px] flex flex-col justify-center items-center gap-4">
-      <h2 className="text-light-purple dark:text-dark-dblila   text-5xl mb-4 font-bold"> {texts.footerSection.heading}</h2>
+      <h2 className="text-light-purple dark:text-dark-dblila text-2xl md:text-5xl  mb-4 font-bold"> {texts.footerSection.heading}</h2>
       <p className="text-2xl leading-9 text-center dark:text-white">
         {texts.footerSection.line1}
       </p>

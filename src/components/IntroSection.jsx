@@ -7,13 +7,13 @@ function IntroSection() {
     useLanguageTheme();
 
   return (
-    <div className=" h-[671px] sm:bg-light-purple-to-green  lg:bg-light-purple-to-green dark:bg-dark-purple-to-dark-green   flex items-center justify-center sm:px-10 ">
+    <div className=" h-auto bg-dark-pclil md:h-[671px] md:bg-light-purple-to-green  dark:bg-dark-purple-to-dark-green flex justify-center  ">
       <div className=" lg:max-w-[955px] ">
-        <div className="flex justify-between h-20">
-          <h2 className="text-light-green font-bold text-3xl self-center">
+        <div className="flex justify-between h-20 pt-10">
+          <h2 className="text-light-green font-bold text-xl pl-4 md:pl-0 md:text-3xl self-center">
             Ayşen
           </h2>
-          <div className="flex gap-9">
+          <div className="flex gap-9 pt-16">
             <div className="uppercase text-light-green dark:text-light-gray font-bold">
               {language === "tr" ? (
                 <>
@@ -44,7 +44,7 @@ function IntroSection() {
                 alt="theme mode"
                 className="h-6 cursor-pointer"
               />
-              <div className="uppercase  text-dark-pblila dark:text-dark-silver font-bold">
+              <div className="uppercase pr-4 md:pr-0 text-dark-pblila dark:text-dark-silver font-bold">
                 {theme === "dark"
                   ? texts.introSection.lightMode
                   : texts.introSection.darkMode}
@@ -52,17 +52,18 @@ function IntroSection() {
             </div>
           </div>
         </div>
-        <div className="flex sm:flex-row flex-col sm:gap-5 lg:gap-20 ">
+        <div className="flex pt-14 justify-center items-center gap-5 flex-col md:flex-row md:gap-20 ">
           <div className="flex flex-col gap-9">
             <Title
-              textSize={"text-5.5xl"}
+              textSize={" text-3xl md:text-5.5xl"}
               text={texts.introSection.heading}
               color={"text-light-green"}
+              className={"text-center md:text-left leading-normal "}
             />
-            <div className="text-white text-2xl">
+            <div className=" text-light-purple md:text-white text-xl md:text-2xl text-center md:text-left">
               {texts.introSection.subHeading}
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center md:justify-normal pb-8 md:pb-0">
               <SocialButton
                 icon={
                   <i className="fa fa-github text-2xl" aria-hidden="true"></i>
@@ -79,9 +80,9 @@ function IntroSection() {
               />
             </div>
           </div>
-          <div className=" shrink-0 ">
+          <div className="shrink-0 pb-8 md:pb-0">
             <img
-              className="lg:w-[350px] lg:h-[375px]  sm:w-[200px] sm:h-[200px] rounded-xl"
+              className="md:w-[350px] md:h-[375px]  w-[200px] h-[200px] rounded-xl"
               src="profile1.png"
               alt=""
             />

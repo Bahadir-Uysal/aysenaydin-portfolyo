@@ -8,18 +8,17 @@ function SkillList() {
   const { texts } = useLanguageTheme();
 
   return (
-    <div className="flex sm:gap-8 lg:gap-36 mt-[84px] mb-[96px] justify-center w-full">
-      <Title text={texts.skillsSection.heading} textSize={"text-5xl"} color={"text-light-purple dark:text-light-green"} />
-
-      <div className="flex justify-center sm:gap-5 lg:gap-36 ">
+    <div className="flex flex-col md:flex-row gap-8 lg:gap-36 py-8 md:pt-[84px] md:pb-[96px] justify-center w-full text-l md:text-2xl">
+      <Title text={texts.skillsSection.heading} textSize={"text-3xl md:text-5xl"} color={"text-light-purple dark:text-light-green"} className={"text-center md:text-left"} />
+      <div className="flex justify-center gap-5 lg:gap-36 ">
         <div className="flex gap-9 flex-col">
           {skillsLeft.map((skill, index) => (
             <div
               key={index}
-              className="flex items-center gap-6 text-2xl text-light-gray font-semibold"
+              className="flex items-center gap-3 md:gap-6  text-light-gray font-semibold"
             >
               <img
-                className={`sm:w-16 sm:h-16 lg:w-32 lg:h-32 rounded-md ${
+                className={`w-16 h-16 lg:w-32 lg:h-32 rounded-md ${
                   skill.backgroundColor ? skill.backgroundColor : ""
                 }`}
                 src={skill.icon}
@@ -34,10 +33,10 @@ function SkillList() {
           {skillsRight.map((skill, index) => (
             <div
               key={index}
-              className="flex items-center gap-6 text-2xl text-light-gray font-semibold"
+              className="flex items-center gap-3 md:gap-6  text-light-gray font-semibold"
             >
               <img
-                className=" sm:w-16 sm:h-16 lg:w-32 lg:h-32 rounded-md "
+                className=" w-16 h-16 lg:w-32 lg:h-32 rounded-md "
                 src={skill.icon}
                 alt={skill.title}
               />
