@@ -8,16 +8,16 @@ function IntroSection() {
 
   return (
     <div className=" h-auto bg-dark-pclil md:h-[671px] md:bg-light-purple-to-green  dark:bg-dark-purple-to-dark-green flex justify-center  ">
-      <div className=" lg:max-w-[955px] ">
-        <div className="flex justify-between h-20 pt-10">
-          <h2 className="text-light-green font-bold text-xl pl-4 md:pl-0 md:text-3xl self-center">
+      <div className=" lg:max-w-[955px] md:pt-10 ">
+        <div className="flex md:justify-between  md:h-20  md:flex-row justify-center flex-col-reverse">
+          <h2 className="text-light-green font-bold text-3xl pt-16 md:pt-0 md:text-3xl self-center">
             Ayşen
           </h2>
-          <div className="flex gap-9 pt-16">
-            <div className="uppercase text-light-green dark:text-light-gray font-bold">
+          <div className="flex md:gap-9 gap-4 justify-center md:justify-start md:pt-16 pt-8 text-sm md:text-base">
+            <div className="uppercase text-light-green dark:text-light-gray font-bold ">
               {language === "tr" ? (
                 <>
-                  <span className="text-light-silver">Switch to </span>
+                  <span className="text-light-silver ">Switch to </span>
                   <span
                     className="dark:text-dark-lilly cursor-pointer"
                     onClick={() => changeLang("en")}

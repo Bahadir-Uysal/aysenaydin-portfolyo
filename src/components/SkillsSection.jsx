@@ -9,7 +9,7 @@ function SkillList() {
 
   return (
     <div className="flex flex-col md:flex-row gap-8 lg:gap-36 py-8 md:pt-[84px] md:pb-[96px] justify-center w-full text-l md:text-2xl">
-      <Title text={texts.skillsSection.heading} textSize={"text-3xl md:text-5xl"} color={"text-light-purple dark:text-light-green"} className={"text-center md:text-left"} />
+      <Title text={texts.skillsSection.heading} textSize={"text-3xl md:text-5xl"} color={"text-light-green md:text-light-purple  dark:text-light-green"} className={"text-center md:text-left"} />
       <div className="flex justify-center gap-5 lg:gap-36 ">
         <div className="flex gap-9 flex-col">
           {skillsLeft.map((skill, index) => (
