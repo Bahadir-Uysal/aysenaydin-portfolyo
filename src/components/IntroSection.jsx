@@ -8,7 +8,7 @@ function IntroSection() {
 
   return (
     <div className=" h-auto bg-dark-pclil md:h-[671px] md:bg-light-purple-to-green  dark:bg-dark-purple-to-dark-green flex justify-center  ">
-      <div className=" lg:max-w-[955px] md:pt-10 ">
+      <div className=" md:max-w-[955px] md:pt-10 ">
         <div className="flex md:justify-between  md:h-20  md:flex-row justify-center flex-col-reverse">
           <h2 className="text-light-green font-bold text-3xl pt-16 md:pt-0 md:text-3xl self-center">
             Ayşen
@@ -82,7 +82,7 @@ function IntroSection() {
           </div>
           <div className="shrink-0 pb-8 md:pb-0">
             <img
-              className="md:w-[350px] md:h-[375px]  w-[200px] h-[200px] rounded-xl"
+              className="md:w-[350px] md:h-[375px]  w-[200px] h-[200px] rounded-xl shadow-avatar-shadow "
               src="profile1.png"
               alt=""
             />

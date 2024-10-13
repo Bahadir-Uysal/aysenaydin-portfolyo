@@ -25,27 +25,29 @@ export const LanguageThemeProvider = ({ children }) => {
       setTheme("light");
     }
     saveToLocalStorage("theme", theme === "light" ? "dark" : "light");
-    toast.success("Theme updated successfully!");
+    toast.success(texts.alertSection.themeSuccess);
   }
 
   function changeLang(lang) {
-    setLanguage(lang);
-    saveToLocalStorage("language", lang);
-    toast.success("Language updated successfully!");
-
-    const data =
-      lang === "EN"
-        ? { language: languageData.en }
-        : { language: languageData.tr };
+    setLanguage(() => {
+      saveToLocalStorage("language", lang);
+      return lang;
+    });
+  
+    const data = lang === "en" ? { language: languageData.en } : { language: languageData.tr };
+  
     axios
       .post("https://reqres.in/api/workintech", data)
       .then((response) => {
         console.log("Dil başarıyla gönderildi:", response.data);
+        toast.success(languageData[lang].alertSection.success);
       })
       .catch((error) => {
         console.error("Dil değiştirme sırasında hata oluştu:", error);
+        toast.error(languageData[lang].alertSection.error);
       });
   }
+  
 
   useEffect(() => {
     setTexts(languageData[language]);

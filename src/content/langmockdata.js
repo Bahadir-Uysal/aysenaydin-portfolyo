@@ -51,6 +51,11 @@ export const languageData = {
         heading: "Send me a message!",
         line1: "Got a question or proposal, or just want",
       line2: "to say hello? Go ahead.",
+      },
+      alertSection:{
+        success:"Language updated successfully!",
+        error:"Language update failed! Please try again.",
+        themeSuccess:"Theme updated successfully!"
       }
     },
     tr: {
@@ -106,6 +111,13 @@ export const languageData = {
         line1: "Bir sorunuz ya da teklifiniz mi var, yoksa sadece",
       line2: "merhaba demek mi istiyorsunuz? Buyrun.",
       },
+
+      alertSection:{
+        success:"Dil başarıyla güncellendi!",
+        error:"Dil güncellemesi başarısız oldu! Lütfen tekrar deneyin.",
+        themeSuccess:"Tema başarıyla güncellendi.!"
+
+      }
     },
   };
   

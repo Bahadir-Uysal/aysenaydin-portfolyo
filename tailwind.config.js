@@ -7,7 +7,7 @@ export default {
       backgroundImage: {
         "light-purple-to-green":
           "linear-gradient(to right, #4731D3 70%, #CBF281 70%)",
-          "dark-purple-to-dark-green":
+        "dark-purple-to-dark-green":
           "linear-gradient(to right, #171043 70%, #1A210B 70%)",
       },
       colors: {
@@ -25,15 +25,15 @@ export default {
           green: "#1A210B",
           gray: "#252128",
           silver: "#D9D9D9",
-          dbgri:"#2B2727",
-          dblila:" #8F88FF",
-          pblila:" #8173DA",
-          pclil:"#C1BAED"
-          
+          dbgri: "#2B2727",
+          dblila: " #8F88FF",
+          pblila: " #8173DA",
+          pclil: "#C1BAED",
         },
       },
       boxShadow: {
         "card-shadow": "0px 8px 28px -6px",
+        "avatar-shadow": " 0px 18px 88px -4px #18274B24"
       },
       fontSize: {
         "5.5xl": "3.375rem",
@@ -43,8 +43,7 @@ export default {
       },
     },
     screens: {
-      sm: "576px",
-      md:"1120px",
+      md: "1120px",
       lg: "1440px",
     },
   },

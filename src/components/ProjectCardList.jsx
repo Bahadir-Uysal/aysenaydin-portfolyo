@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
 import Title from "./Title";
 import { useLanguageTheme } from "../contexts/LanguageThemeContext";
