@@ -34,8 +34,8 @@ export const languageData = {
               name: "PIZZA ORDER FORM",
               desc: "The first project featured in this portfolio is the Pizza Order Form, which showcases a food ordering interface. This project was built using React Router for routing, Axios for API requests, Cypress for testing the application's functionality, and form validations to enhance the user experience.",
               skills: ["react", "redux", "vercel"],
-              link: "",
-              github: "",
+              link: "pizza-iota-murex.vercel.app",
+              github: "https://github.com/Bahadir-Uysal/wit-sprint8",
             },
             {
               img: "card12.png",
@@ -93,8 +93,8 @@ export const languageData = {
               name: "PİZZA SİPARİŞ FORMU",
               desc: "Bu portföyde yer alan ilk proje, Pizza Sipariş Formu olup, yemek sipariş arayüzünü göstermektedir. Bu proje, React Router ile yönlendirme, Axios ile API istekleri, Cypress ile uygulamanın işlevselliğini test etmek ve form validasyonları sağlamak için geliştirilmiştir.",
               skills: ["react", "redux", "vercel"],
-              link: "",
-              github: "",
+              link: "pizza-iota-murex.vercel.app",
+              github: "https://github.com/Bahadir-Uysal/wit-sprint8",
             },
             {
               img: "card12.png",
