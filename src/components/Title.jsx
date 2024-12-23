@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 function Title({ color, text, textSize,className }) {
 

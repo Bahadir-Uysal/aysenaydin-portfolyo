@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Title from "./Title";
 import { useLanguageTheme } from "../contexts/LanguageThemeContext";
@@ -48,7 +49,7 @@ function ProfileSection() {
           <div>
             <img
               className="rounded-lg w-[300px] h-[290px]"
-              src="profile2.png"
+              src="frontend.jpg"
               alt=""
             />
           </div>

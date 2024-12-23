@@ -2,7 +2,7 @@ import { useLanguageTheme } from "../contexts/LanguageThemeContext";
 
 const FooterSection = () => {
   const { texts } = useLanguageTheme();
-  const username = "aysen904";
+  const username = "uysalbahadir1529";
   const domain = "gmail.com";
   const handleClick = () => {
     window.location.href = `mailto:${username}@${domain}`;

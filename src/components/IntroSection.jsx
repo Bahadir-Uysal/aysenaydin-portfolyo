@@ -11,7 +11,7 @@ function IntroSection() {
       <div className=" md:max-w-[955px] md:pt-10 ">
         <div className="flex md:justify-between  md:h-20  md:flex-row justify-center flex-col-reverse">
           <h2 className="text-light-green font-bold text-3xl pt-16 md:pt-0 md:text-3xl self-center">
-            Ayşen
+            Bahadır UYSAL
           </h2>
           <div className="flex md:gap-9 gap-4 justify-center md:justify-start md:pt-16 pt-8 text-sm md:text-base">
             <div className="uppercase text-light-green dark:text-light-gray font-bold ">
@@ -33,7 +33,7 @@ function IntroSection() {
                   >
                     {texts.introSection.currentLang}
                   </span>
-                  <span className="text-light-silver">'ye geç</span>
+                  <span className="text-light-silver"> &apos;ye geç</span>
                 </>
               )}
             </div>
@@ -69,21 +69,21 @@ function IntroSection() {
                   <i className="fa fa-github text-2xl" aria-hidden="true"></i>
                 }
                 text={"Github"}
-                link={"https://github.com/aysenayydin"}
+                link={"https://github.com/Bahadir-Uysal"}
               />
               <SocialButton
                 icon={
                   <i className="fa fa-linkedin text-2xl" aria-hidden="true"></i>
                 }
                 text={"Linkedin"}
-                link={"https://www.linkedin.com/in/aysenaydin/"}
+                link={"https://www.linkedin.com/in/bahadir-uysal/"}
               />
             </div>
           </div>
           <div className="shrink-0 pb-8 md:pb-0">
             <img
-              className="md:w-[350px] md:h-[375px]  w-[200px] h-[200px] rounded-xl shadow-avatar-shadow "
-              src="profile1.png"
+              className="md:w-[350px] md:h-[375px]  w-[200px]  h-[200px] rounded-xl shadow-avatar-shadow "
+              src="profile1.jpg"
               alt=""
             />
           </div>
